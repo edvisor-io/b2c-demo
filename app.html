@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Edvisor Test Agency</title>
+    <!-- Load the Edvisor Widget from the CDN -->
+    <script type="text/javascript" src="https://dev-a.edvisor.io/b2c/edvisor-search.js"></script>
+    <style>
+      .b2c {
+        color: darkslategray;
+        background-color: whitesmoke;
+      }
+      .b2c-header {
+        color: darkslategray;
+        padding: 30px;
+        background-color: #fff;
+      }
+      .b2c-hero {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: whitesmoke;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body class='b2c'>
+    <section class='b2c-header'>
+      <h1>Edvisor School</h1>
+    </section>
+    <!-- Placeholder for edvisor search app -->
+    <div id="Widget" class='b2c-hero'></div>
+    <!-- Placeholder for edvisor widget -->
+    <div id="btWidget"></div>
+    <script type="text/javascript">
+      (function () {
+        Edvisor.widgets.CourseSearchApp.render({
+          selector: '#Widget',
+          agencyId: 1326,
+          termsUrl: 'http://www.example.com',
+          apiKey: 'private_superspecialkeyfornick',
+          defaultStudentLanguageId: 1,
+          defaultStudentNationalityId: 70
+        })
+      })()
+    </script>
+  </body>
+</html>

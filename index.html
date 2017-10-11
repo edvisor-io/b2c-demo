@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>Edvisor School</title>
+    <script type="text/javascript" src="https://dev-a.edvisor.io/b2c/edvisor-search.js"></script>
+    <script>
+      Edvisor.widgets.StartQuoteModal.init({
+        startQuoteSelector: '#btWidget',
+        apiKey: 'private_superspecialkeyfornick',
+        defaultStudentNationalityId: 70,
+        agencyId: 1326,
+        defaultStudentLanguage: {
+          languageId: 1,
+          code: 'en'
+        },
+        defaultCourseCategoryIds: [3],
+        redirectUrl: 'app.html'
+      })
+    </script>
+    <style>
+      .b2c {
+        color: darkslategray;
+        background-color: whitesmoke;
+      }
+      .b2c-header {
+        color: darkslategray;
+        padding: 30px;
+        background-color: #fff;
+      }
+      .b2c-hero {
+        position: relative;
+        background-color: #fff;
+        text-align: center;
+        padding: 40px;
+        max-width: 400px;
+        margin: 50px auto;
+      }
+      .b2c-button {
+        background: orange;
+        width: 200px;
+        height: 60px;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .b2c-button:hover {
+        background: darkorange;
+        color: #fff;
+      }
+      .b2c-list {
+        margin-bottom: 30px;
+      }
+      .b2c-list li {
+        font-size: 16px;
+        padding-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body class='b2c'>
+    <section class='b2c-header'>
+      <h1>Edvisor School</h1>
+    </section>
+    <section class='b2c-hero'>
+      <ul class='b2c-list'>
+        <li>Browse our courses</li>
+        <li>Find Prices</li>
+        <li>Apply online Now!</li>
+      </ul>
+      <!-- Button triggering the Edvisor Widget -->
+      <button class='b2c-button' type="button" onClick="Edvisor.widgets.StartQuoteModal.render()" />Find a Course Now!</button>
+      <!-- Placeholder for edvisor widget -->
+      <div id="btWidget"></div>
+    </section>
+  </body>
+</html>
