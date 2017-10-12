@@ -1,21 +1,8 @@
 <html>
   <head>
-    <title>Edvisor School</title>
+    <title>ABC Agency</title>
     <script type="text/javascript" src="https://dev-a.edvisor.io/b2c/edvisor-search.js"></script>
-    <script>
-      Edvisor.widgets.StartQuoteModal.init({
-        startQuoteSelector: '#btWidget',
-        apiKey: 'private_superspecialkeyfornick',
-        defaultStudentNationalityId: 70,
-        agencyId: 1326,
-        defaultStudentLanguage: {
-          languageId: 1,
-          code: 'en'
-        },
-        defaultCourseCategoryIds: [3],
-        redirectUrl: 'app.html'
-      })
-    </script>
+
     <style>
       .b2c {
         color: darkslategray;
@@ -36,12 +23,13 @@
       }
       .b2c-button {
         background: orange;
-        width: 200px;
         height: 60px;
         color: #fff;
         border-radius: 4px;
         font-size: 16px;
         font-weight: 600;
+        padding: 0 20px;
+        margin-bottom: 20px;
       }
       .b2c-button:hover {
         background: darkorange;
@@ -58,7 +46,7 @@
   </head>
   <body class='b2c'>
     <section class='b2c-header'>
-      <h1>Edvisor School</h1>
+      <h1>ABC Agency</h1>
     </section>
     <section class='b2c-hero'>
       <ul class='b2c-list'>
@@ -67,7 +55,45 @@
         <li>Apply online Now!</li>
       </ul>
       <!-- Button triggering the Edvisor Widget -->
-      <button class='b2c-button' type="button" onClick="Edvisor.widgets.StartQuoteModal.render()" />Find a Course Now!</button>
+      <button class='b2c-button' type="button" onClick="Edvisor.widgets.StartQuoteModal.render({
+        startQuoteSelector: '#btWidget',
+        apiKey: 'private_superspecialkeyfornick',
+        defaultStudentNationalityId: 70,
+        agencyId: 1326,
+        defaultStudentLanguage: {
+          languageId: 1,
+          code: 'en'
+        },
+        defaultCourseCategoryIds: [3],
+        defaultGooglePlaceIds: ['ChIJM9KTrJpXkWsRQK_e81qjAgQ'],
+        redirectUrl: 'app.html'
+      })">Find a Courses in Brisbane!</button>
+       <button class='b2c-button' type="button" onClick="Edvisor.widgets.StartQuoteModal.render({
+        startQuoteSelector: '#btWidget',
+        apiKey: 'private_superspecialkeyfornick',
+        defaultStudentNationalityId: 70,
+        agencyId: 1326,
+        defaultStudentLanguage: {
+          languageId: 1,
+          code: 'en'
+        },
+        defaultCourseCategoryIds: [3],
+        defaultGooglePlaceIds: ['ChIJgf0RD69C1moR4OeMIXVWBAU'],
+        redirectUrl: 'app.html'
+      })">Find a Courses in Melbourne!</button>
+       <button class='b2c-button' type="button" onClick="Edvisor.widgets.StartQuoteModal.render({
+        startQuoteSelector: '#btWidget',
+        apiKey: 'private_superspecialkeyfornick',
+        defaultStudentNationalityId: 70,
+        agencyId: 1326,
+        defaultStudentLanguage: {
+          languageId: 1,
+          code: 'en'
+        },
+        defaultCourseCategoryIds: [3],
+        defaultGooglePlaceIds: ['ChIJP5iLHkCuEmsRwMwyFmh9AQU'],
+        redirectUrl: 'app.html'
+      })">Find a Courses in Sydney!</button>
       <!-- Placeholder for edvisor widget -->
       <div id="btWidget"></div>
     </section>
