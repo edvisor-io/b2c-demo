@@ -52,9 +52,10 @@
         studentNationality: 'ca',
         studentLanguage: 'en',
         defaultCourseCategoryIds: [3],
-        defaultGooglePlaceIds: ['ChIJM9KTrJpXkWsRQK_e81qjAgQ'],
+        // defaultGooglePlaceIds: ['ChIJM9KTrJpXkWsRQK_e81qjAgQ'],
         redirectUrl: 'app.html',
-        gaTrackingId: 'UA-107862751-1'
+        gaTrackingId: 'UA-107862751-1',
+        defaultSchoolIds: [1275, 1019]
       })
 
       var examPrepInSydney = Edvisor.widgets.StartQuoteModal.newInstance({
@@ -64,8 +65,9 @@
         agencyId: 1326,
         studentLanguage: 'en',
         defaultCourseCategoryIds: [6],
-        defaultGooglePlaceIds: ['ChIJP5iLHkCuEmsRwMwyFmh9AQU'],
-        redirectUrl: 'app.html'
+        // defaultGooglePlaceIds: ['ChIJP5iLHkCuEmsRwMwyFmh9AQU'],
+        redirectUrl: 'app.html',
+        defaultSchoolIds: [1295, 833]
       })
     </script>
 
@@ -82,7 +84,7 @@
         <li>(Trigger the quoting plugin from school or city pages on your website)</li>
       </ul>
       <!-- Button triggering the Edvisor Widget -->
-      <button class='b2c-button' type="button" onClick="englishInBrisbane.render()">General English in Brisbane!</button>
+      <button class='b2c-button' type="button" onClick="englishInBrisbane.render()">Gold Coast!</button>
       <a href='app.html#/search/{"nationalityId":46,"sa":"2017-10-19","l":[{"gp":["ChIJgf0RD69C1moR4OeMIXVWBAU"]}],"cc":[{"id":3,"n":"General English"}],"a":18,"d":{"t":3,"l":4}}'>
        <button class='b2c-button' type="button">Find a course at SACE!</button>
       </a>
